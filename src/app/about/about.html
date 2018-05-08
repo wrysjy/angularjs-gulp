@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+<button ng-click="about.showitem()">show book</button>
+<button ng-click="about.hideitem()">hide book</button>
+
+  <ul>
+  <li ng-repeat="book in about.myvalue">
+    name: {{book.name}},
+    description: {{book.description}},
+    <img ng-src="{{book.image}}" style="max-width: 40px;">
+    category: {{book.category.name}}
+  </li>
+</ul>
+
+</div>
